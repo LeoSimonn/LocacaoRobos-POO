@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplicacao.NovoClienteController">
+    <children>
+        <Label layoutX="5.0" layoutY="45.0" text="Código do Cliente:" />
+        <TextField fx:id="codigoTextField" layoutX="115.0" layoutY="41.0" prefHeight="27.0" prefWidth="150.0" />
+        <Button fx:id="limparButton" layoutX="153.0" layoutY="249.0" text="Limpar" />
+        <Label layoutX="5.0" layoutY="86.0" text="Nome do Cliente:" />
+        <TextField fx:id="nomeTextField" layoutX="115.0" layoutY="82.0" prefHeight="27.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="perfilChoiceBox" layoutX="116.0" layoutY="122.0" prefHeight="28.0" prefWidth="147.0" />
+        <Label layoutX="5.0" layoutY="127.0" text="Perfil do Cliente" />
+
+        <!-- Campos opcionais -->
+        <Label fx:id="anoLabel" layoutX="5.0" layoutY="171.0" text="Ano:" visible="false" />
+        <TextField fx:id="anoTextField" layoutX="115.0" layoutY="167.0" prefHeight="27.0" prefWidth="150.0" visible="false" />
+        <Label fx:id="cpfLabel" layoutX="5.0" layoutY="171.0" text="CPF:" visible="false" />
+        <TextField fx:id="cpfTextField" layoutX="115.0" layoutY="167.0" prefHeight="27.0" prefWidth="150.0" visible="false" />
+      <Button fx:id="mostrarClientesButton" layoutX="130.0" layoutY="289.0" mnemonicParsing="false" text="Mostrar Todos Clientes" />
+      <Button fx:id="salvarButton" layoutX="213.0" layoutY="248.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="51.0" text="Salvar" />
+    </children>
+</AnchorPane>
